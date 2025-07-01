@@ -10,7 +10,7 @@ terraform {
 provider "grafana" {
   alias = "cloud"
 
-  cloud_access_policy_token = "<CLOUD_ACCESS_POLICY_TOKEN>"
+  cloud_access_policy_token = "glsa_mNP6lEHszsvtIVFJzSAqlxXhQWzFh3ig_715c2eaa"
 }
 
 data "grafana_cloud_stack" "stack" {
