@@ -1,0 +1,10 @@
+remotecfg {
+    id             = "${collector_id}"
+    url            = "${fm_url}"
+    poll_frequency = "60s"
+
+    basic_auth {
+        username = "${fm_id}"
+        password = sys.env("GCLOUD_RW_API_KEY")
+    }
+}
